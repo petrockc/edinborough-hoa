@@ -26,8 +26,9 @@
         }
 
         header {
-            background: rgba(255, 255, 255, 0.95);
-            border: 1px solid #dee2e6;
+            background: #6c757d; /* Dark gray background */
+            color: white; /* White text for contrast */
+            border: 1px solid #495057; /* Slightly darker border */
             border-radius: 8px;
             padding: 30px;
             margin-bottom: 30px;
@@ -38,12 +39,12 @@
         .logo {
             font-size: 2.5em;
             font-weight: bold;
-            color: #2c3e50;
+            color: white; /* Change from dark to white */
             margin-bottom: 10px;
         }
 
         .subtitle {
-            color: #6c757d;
+            color: #f8f9fa; /* Light gray for subtitle */
             font-size: 1.1em;
         }
 
@@ -287,14 +288,18 @@
                 <div class="card-header">
                     <div class="card-icon">📞</div>
                     <div class="card-title">Contact Board</div>
+                </div>    
+                <div class="contact-card">
+                    <div class="contact-title">Board Email</div>
+                    <div class="contact-details">board@edinboroughhoa.com</div>
+                    <button class="btn" onclick="emailBoard()">📧 Email the Board</button>
                 </div>
-                <div class="contact-info">
-                    <strong>Board Email:</strong> board@edinboroughhoa.com<br>
-                    <strong>Emergency Contact:</strong> (555) 123-4567
+                <div class="contact-card">
+                    <div class="contact-title">Emergency Contact</div>
+                    <div class="contact-details">(555) 123-4567</div>
+                    <button class="btn btn-secondary" onclick="reportIssue()">🔧 Report Issue</button>
                 </div>
-                <button class="btn" onclick="emailBoard()">📧 Email the Board</button>
-                <button class="btn btn-secondary" onclick="reportIssue()">🔧 Report an Issue</button>
-            </div>
+            </div>            
 
             <!-- Upcoming Events -->
             <div class="card">
