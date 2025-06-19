@@ -237,17 +237,17 @@
                 <div class="announcement">
                     <div class="announcement-date">June 15, 2025</div>
                     <div class="announcement-title">Landscaping Maintenance Schedule</div>
-                    <p>Common area landscaping will occur Wednesdays 8 AM - 4 PM. Please avoid parking in designated work areas.</p>
+                    <p>Common area landscaping will occur on Wednesdays between the hours of 8 AM and 4 PM.</p>
                 </div>
                 <div class="announcement">
                     <div class="announcement-date">June 10, 2025</div>
                     <div class="announcement-title">Annual Meeting Reminder</div>
-                    <p>Our annual HOA meeting is scheduled for July 15th at 7 PM in the community center. All homeowners are encouraged to attend.</p>
+                    <p>Our annual HOA meeting is scheduled for January 2026 (exact time and date TBD). All homeowners are encouraged to attend.</p>
                 </div>
                 <div class="announcement">
                     <div class="announcement-date">June 5, 2025</div>
-                    <div class="announcement-title">Monthly Board Meeting</div>
-                    <p>Next board meeting: June 25th at 7 PM in the community center. All residents welcome.</p>
+                    <div class="announcement-title">Quarterly Board Meeting</div>
+                    <p>Next board meeting: July 11th at 6 PM via Zoom.</p>
                 </div>
             </div>
 
@@ -302,7 +302,7 @@
                     <div class="card-title">Upcoming Events</div>
                 </div>
                 <div class="announcement">
-                    <div class="announcement-date">July 15, 2025 - 7:00 PM</div>
+                    <div class="announcement-date">January 24, 2026 - 10:30 AM</div>
                     <div class="announcement-title">Annual HOA Meeting</div>
                     <p>Community Center - Election of board members and budget approval</p>
                 </div>
@@ -329,16 +329,13 @@
                         <a href="https://hcfl.gov/residents/property-owners-and-renters/trash-and-recycling" target="_blank" class="document-link">Trash & Recycling Schedule</a>
                     </li>
                     <li>
-                        <a href="https://hcfl.gov/residents/property-owners-and-renters/trash-and-recycling" target="_blank" class="document-link">TECO Outage Map</a>
+                        <a href="https://outage.tecoenergy.com/" target="_blank" class="document-link">TECO Outage Map</a>
                     </li>
                     <li>
                         <a href="https://www.accuweather.com/en/us/carrollwood/33618/weather-forecast/2257996" target="_blank" class="document-link">Local Weather Forecast</a>
                     </li>
                     <li>
                         <a href="#" class="document-link">Approved Vendors List</a>
-                    </li>
-                    <li>
-                        <a href="#" class="document-link">Parking Guidelines</a>
                     </li>
                 </ul>
                 <button class="btn" onclick="viewGallery()">📸 Community Photos</button>
@@ -350,7 +347,6 @@
                     <div class="card-icon">🔗</div>
                     <div class="card-title">Quick Links</div>
                 </div>
-                <button class="btn" onclick="payDues()">💳 Pay HOA Dues Online</button>
                 <button class="btn btn-secondary" onclick="submitRequest()">📝 Submit ARC Request</button>
                 <button class="btn" onclick="emergencyContacts()">🚨 Emergency Contacts</button>
                 <button class="btn btn-secondary" onclick="weatherAlert()">🌤️ Local Weather</button>
@@ -383,11 +379,6 @@
             const subject = encodeURIComponent('Architectural Review Committee Request');
             const body = encodeURIComponent('Dear ARC Committee,\n\nI would like to submit a request for approval of the following modification:\n\nProperty Address: [Your address]\nProject Description: [Describe your project]\nProposed Timeline: [When you plan to start/complete]\n\nI have attached/will provide the following documentation:\n- Detailed plans/drawings\n- Material specifications\n- Contractor information (if applicable)\n\nThank you for your consideration,\n[Your Name]\n[Your Contact Information]');
             window.location.href = `mailto:board@edinboroughhoa.com?subject=${subject}&body=${body}`;
-        }
-
-        // Pay dues (placeholder)
-        function payDues() {
-            alert('HOA dues payment portal will be available soon. Please contact the board for current payment methods.');
         }
 
         // View community gallery
