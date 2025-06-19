@@ -71,6 +71,7 @@
         .card-header {
             display: flex;
             align-items: center;
+            justify-content: center; /* This centers the content */
             margin-bottom: 20px;
         }
 
@@ -219,8 +220,8 @@
 <body>
     <div class="container">
         <header>
-            <div class="logo">🏘️ Edinborough HOA</div>
-            <div class="subtitle">Community Dashboard & Information Center</div>
+            <div class="logo">Edinborough HOA</div>
+            <div class="subtitle">Community Dashboard and Information Center</div>
         </header>
 
         <div class="emergency-banner" style="display: none;" id="emergencyBanner">
@@ -292,7 +293,7 @@
                     <strong>Emergency Contact:</strong> (555) 123-4567
                 </div>
                 <button class="btn" onclick="emailBoard()">📧 Email the Board</button>
-                <button class="btn btn-secondary" onclick="reportIssue()">🔧 Report Issue</button>
+                <button class="btn btn-secondary" onclick="reportIssue()">🔧 Report an Issue</button>
             </div>
 
             <!-- Upcoming Events -->
