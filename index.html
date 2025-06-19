@@ -213,8 +213,8 @@
 <body>
     <div class="container">
         <header>
-            <div class="logo">🏘️ Edinborough HOA</div>
-            <div class="subtitle">Community Dashboard & Information Center</div>
+            <div class="logo">Edinborough HOA</div>
+            <div class="subtitle">Community Dashboard and Information Center</div>
         </header>
 
         <div class="emergency-banner" style="display: none;" id="emergencyBanner">
@@ -230,18 +230,18 @@
                 </div>
                 <div class="announcement">
                     <div class="announcement-date">June 15, 2025</div>
-                    <div class="announcement-title">Summer Pool Hours Updated</div>
-                    <p>Pool hours have been extended for summer season. Open daily 6 AM - 10 PM.</p>
+                    <div class="announcement-title">Gate Repair Completed</div>
+                    <p>The exit gate motor has been replaced. The gate is now fully functional again.</p>
                 </div>
                 <div class="announcement">
-                    <div class="announcement-date">June 10, 2025</div>
-                    <div class="announcement-title">Landscaping Maintenance Schedule</div>
-                    <p>Common area landscaping will occur Wednesdays 8 AM - 4 PM. Temporary parking restrictions may apply.</p>
+                    <div class="announcement-date">June 19, 2025</div>
+                    <div class="announcement-title">Third Quarter Dues</div>
+                    <p>3rd quarter dues must be paid on August 1, 2025. Pay in person or coordinate directly with Kelly.</p>
                 </div>
                 <div class="announcement">
                     <div class="announcement-date">June 5, 2025</div>
-                    <div class="announcement-title">Monthly Board Meeting</div>
-                    <p>Next board meeting: June 25th at 7 PM in the community center. All residents welcome.</p>
+                    <div class="announcement-title">Quarterly Board Meeting</div>
+                    <p>Next board meeting: July 11th at 6 PM. All residents are welcome to attend.</p>
                 </div>
             </div>
 
@@ -253,19 +253,15 @@
                 </div>
                 <ul class="document-list">
                     <li>
-                        <a href="#" class="document-link">HOA Declaration & Covenants</a>
-                        <span class="document-date">Updated 2024</span>
+                        <a href="#" class="document-link">HOA Declaration</a>
+                        <span class="document-date">Updated 1997</span>
                     </li>
                     <li>
                         <a href="#" class="document-link">Bylaws</a>
-                        <span class="document-date">Updated 2024</span>
+                        <span class="document-date">Updated 1997</span>
                     </li>
                     <li>
-                        <a href="#" class="document-link">Architectural Guidelines</a>
-                        <span class="document-date">Updated 2025</span>
-                    </li>
-                    <li>
-                        <a href="#" class="document-link">Rules & Regulations</a>
+                        <a href="#" class="document-link">Revised Bylaws</a>
                         <span class="document-date">Updated 2025</span>
                     </li>
                     <li>
@@ -301,19 +297,14 @@
                     <div class="card-title">Upcoming Events</div>
                 </div>
                 <div class="announcement">
-                    <div class="announcement-date">June 25, 2025 - 7:00 PM</div>
-                    <div class="announcement-title">Monthly Board Meeting</div>
-                    <p>Community Center - All residents welcome</p>
+                    <div class="announcement-date">July 11, 2025 - 6:00 PM</div>
+                    <div class="announcement-title">Quarterly Board Meeting</div>
+                    <p>All residents welcome</p>
                 </div>
                 <div class="announcement">
                     <div class="announcement-date">July 4, 2025 - 2:00 PM</div>
                     <div class="announcement-title">Independence Day BBQ</div>
                     <p>Community Pool Area - Bring a side dish to share!</p>
-                </div>
-                <div class="announcement">
-                    <div class="announcement-date">July 15, 2025 - 10:00 AM</div>
-                    <div class="announcement-title">Community Yard Sale</div>
-                    <p>Register with Sarah by July 10th</p>
                 </div>
             </div>
 
@@ -328,16 +319,13 @@
                         <a href="#" class="document-link">Pool & Amenity Rules</a>
                     </li>
                     <li>
-                        <a href="#" class="document-link">Trash & Recycling Schedule</a>
+                        <a href="#" class="document-link">Trash and Recycling Schedule</a>
                     </li>
                     <li>
                         <a href="#" class="document-link">Approved Vendors List</a>
                     </li>
                     <li>
                         <a href="#" class="document-link">Parking Guidelines</a>
-                    </li>
-                    <li>
-                        <a href="#" class="document-link">Pet Policy</a>
                     </li>
                 </ul>
                 <button class="btn" onclick="viewGallery()">📸 Community Photos</button>
@@ -350,7 +338,7 @@
                     <div class="card-title">Quick Links</div>
                 </div>
                 <button class="btn" onclick="payDues()">💳 Pay HOA Dues Online</button>
-                <button class="btn btn-secondary" onclick="submitRequest()">📝 Submit ARC Request</button>
+                <button class="btn btn-secondary" onclick="submitRequest()">📝 Submit Architectural Review Request</button>
                 <button class="btn" onclick="emergencyContacts()">🚨 Emergency Contacts</button>
                 <button class="btn btn-secondary" onclick="weatherAlert()">🌤️ Local Weather</button>
             </div>
@@ -373,20 +361,20 @@
         // Report maintenance issue
         function reportIssue() {
             const subject = encodeURIComponent('Maintenance Issue Report');
-            const body = encodeURIComponent('Dear Property Manager,\n\nI would like to report the following maintenance issue:\n\nLocation: [Specify location]\nIssue: [Describe the problem]\nUrgency: [Low/Medium/High]\n\nThank you,\n[Your Name]\n[Your Address]\n[Your Phone Number]');
+            const body = encodeURIComponent('Dear Board Members,\n\nI would like to report the following maintenance issue:\n\nLocation: [Specify location]\nIssue: [Describe the problem]\nUrgency: [Low/Medium/High]\n\nThank you,\n[Your Name]\n[Your Address]\n[Your Phone Number]');
             window.location.href = `mailto:board@edinboroughhoa.com?subject=${subject}&body=${body}`;
         }
 
         // Submit ARC request
         function submitRequest() {
             const subject = encodeURIComponent('Architectural Review Committee Request');
-            const body = encodeURIComponent('Dear ARC Committee,\n\nI would like to submit a request for approval of the following modification:\n\nProperty Address: [Your address]\nProject Description: [Describe your project]\nProposed Timeline: [When you plan to start/complete]\n\nI have attached/will provide the following documentation:\n- Detailed plans/drawings\n- Material specifications\n- Contractor information (if applicable)\n\nThank you for your consideration,\n[Your Name]\n[Your Contact Information]');
+            const body = encodeURIComponent('Dear Review Committee,\n\nI would like to submit a request for approval of the following modification:\n\nProperty Address: [Your address]\nProject Description: [Describe your project]\nProposed Timeline: [When you plan to start/complete]\n\nI have attached/will provide the following documentation:\n- Detailed plans/drawings\n- Material specifications\n- Contractor information (if applicable)\n\nThank you for your consideration,\n[Your Name]\n[Your Contact Information]');
             window.location.href = `mailto:board@edinboroughhoa.com?subject=${subject}&body=${body}`;
         }
 
         // Pay dues (placeholder)
         function payDues() {
-            alert('HOA dues payment portal will be available soon. Please contact the board for current payment methods.');
+            alert('Please contact the board for current payment methods.');
         }
 
         // View community gallery
