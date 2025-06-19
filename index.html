@@ -15,7 +15,7 @@
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             line-height: 1.6;
             color: #333;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
             min-height: 100vh;
         }
 
@@ -27,23 +27,23 @@
 
         header {
             background: rgba(255, 255, 255, 0.95);
-            backdrop-filter: blur(10px);
-            border-radius: 15px;
+            border: 1px solid #dee2e6;
+            border-radius: 8px;
             padding: 30px;
             margin-bottom: 30px;
             text-align: center;
-            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
         }
 
         .logo {
             font-size: 2.5em;
             font-weight: bold;
-            color: #5a67d8;
+            color: #2c3e50;
             margin-bottom: 10px;
         }
 
         .subtitle {
-            color: #666;
+            color: #6c757d;
             font-size: 1.1em;
         }
 
@@ -56,16 +56,16 @@
 
         .card {
             background: rgba(255, 255, 255, 0.95);
-            backdrop-filter: blur(10px);
-            border-radius: 15px;
+            border: 1px solid #dee2e6;
+            border-radius: 8px;
             padding: 25px;
-            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
             transition: transform 0.3s ease, box-shadow 0.3s ease;
         }
 
         .card:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 12px 40px rgba(0, 0, 0, 0.15);
+            transform: translateY(-2px);
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
         }
 
         .card-header {
@@ -82,15 +82,15 @@
         .card-title {
             font-size: 1.4em;
             font-weight: bold;
-            color: #5a67d8;
+            color: #2c3e50;
         }
 
         .announcement {
-            background: #f8f9ff;
-            border-left: 4px solid #5a67d8;
+            background: #f8f9fa;
+            border-left: 4px solid #007bff;
             padding: 15px;
             margin-bottom: 15px;
-            border-radius: 0 10px 10px 0;
+            border-radius: 0 4px 4px 0;
         }
 
         .announcement-date {
@@ -106,11 +106,11 @@
         }
 
         .btn {
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            background: #007bff;
             color: white;
             padding: 12px 24px;
             border: none;
-            border-radius: 25px;
+            border-radius: 4px;
             cursor: pointer;
             font-size: 1em;
             margin: 5px;
@@ -120,12 +120,16 @@
         }
 
         .btn:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+            background: #0056b3;
+            transform: translateY(-1px);
         }
 
         .btn-secondary {
-            background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
+            background: #6c757d;
+        }
+
+        .btn-secondary:hover {
+            background: #545b62;
         }
 
         .document-list {
@@ -145,12 +149,13 @@
         }
 
         .document-link {
-            color: #5a67d8;
+            color: #007bff;
             text-decoration: none;
             flex-grow: 1;
         }
 
         .document-link:hover {
+            color: #0056b3;
             text-decoration: underline;
         }
 
@@ -161,37 +166,38 @@
         }
 
         .contact-info {
-            background: #f8f9ff;
+            background: #f8f9fa;
             padding: 15px;
-            border-radius: 10px;
+            border-radius: 4px;
             margin-bottom: 15px;
+            border: 1px solid #dee2e6;
         }
 
         .emergency-banner {
-            background: linear-gradient(135deg, #ff6b6b 0%, #ee5a6f 100%);
+            background: #dc3545;
             color: white;
             padding: 15px;
-            border-radius: 10px;
+            border-radius: 4px;
             margin-bottom: 20px;
             text-align: center;
             font-weight: bold;
         }
 
         .weather-widget {
-            background: linear-gradient(135deg, #74b9ff 0%, #0984e3 100%);
+            background: #17a2b8;
             color: white;
             padding: 20px;
-            border-radius: 10px;
+            border-radius: 4px;
             text-align: center;
         }
 
         footer {
             background: rgba(255, 255, 255, 0.95);
-            backdrop-filter: blur(10px);
-            border-radius: 15px;
+            border: 1px solid #dee2e6;
+            border-radius: 8px;
             padding: 20px;
             text-align: center;
-            color: #666;
+            color: #6c757d;
             margin-top: 30px;
         }
 
@@ -213,8 +219,8 @@
 <body>
     <div class="container">
         <header>
-            <div class="logo">Edinborough HOA</div>
-            <div class="subtitle">Community Dashboard and Information Center</div>
+            <div class="logo">🏘️ Edinborough HOA</div>
+            <div class="subtitle">Community Dashboard & Information Center</div>
         </header>
 
         <div class="emergency-banner" style="display: none;" id="emergencyBanner">
@@ -230,18 +236,18 @@
                 </div>
                 <div class="announcement">
                     <div class="announcement-date">June 15, 2025</div>
-                    <div class="announcement-title">Gate Repair Completed</div>
-                    <p>The exit gate motor has been replaced. The gate is now fully functional again.</p>
+                    <div class="announcement-title">Landscaping Maintenance Schedule</div>
+                    <p>Common area landscaping will occur Wednesdays 8 AM - 4 PM. Please avoid parking in designated work areas.</p>
                 </div>
                 <div class="announcement">
-                    <div class="announcement-date">June 19, 2025</div>
-                    <div class="announcement-title">Third Quarter Dues</div>
-                    <p>3rd quarter dues must be paid on August 1, 2025. Pay in person or coordinate directly with Kelly.</p>
+                    <div class="announcement-date">June 10, 2025</div>
+                    <div class="announcement-title">Annual Meeting Reminder</div>
+                    <p>Our annual HOA meeting is scheduled for July 15th at 7 PM in the community center. All homeowners are encouraged to attend.</p>
                 </div>
                 <div class="announcement">
                     <div class="announcement-date">June 5, 2025</div>
-                    <div class="announcement-title">Quarterly Board Meeting</div>
-                    <p>Next board meeting: July 11th at 6 PM. All residents are welcome to attend.</p>
+                    <div class="announcement-title">Monthly Board Meeting</div>
+                    <p>Next board meeting: June 25th at 7 PM in the community center. All residents welcome.</p>
                 </div>
             </div>
 
@@ -253,19 +259,19 @@
                 </div>
                 <ul class="document-list">
                     <li>
-                        <a href="#" class="document-link">HOA Declaration</a>
-                        <span class="document-date">Updated 1997</span>
+                        <a href="#" class="document-link">Declaration of Covenants</a>
+                        <span class="document-date">Updated 2024</span>
                     </li>
                     <li>
                         <a href="#" class="document-link">Bylaws</a>
-                        <span class="document-date">Updated 1997</span>
+                        <span class="document-date">Updated 2024</span>
                     </li>
                     <li>
-                        <a href="#" class="document-link">Revised Bylaws</a>
-                        <span class="document-date">Updated 2025</span>
+                        <a href="#" class="document-link">Articles of Incorporation</a>
+                        <span class="document-date">Updated 2023</span>
                     </li>
                     <li>
-                        <a href="#" class="document-link">Meeting Minutes Archive</a>
+                        <a href="#" class="document-link">Annual Meeting Minutes Archive</a>
                         <span class="document-date">Current</span>
                     </li>
                     <li>
@@ -283,11 +289,10 @@
                 </div>
                 <div class="contact-info">
                     <strong>Board Email:</strong> board@edinboroughhoa.com<br>
-                    <strong>Property Manager:</strong> Sarah Johnson<br>
                     <strong>Emergency Contact:</strong> (555) 123-4567
                 </div>
                 <button class="btn" onclick="emailBoard()">📧 Email the Board</button>
-                <button class="btn btn-secondary" onclick="reportIssue()">🔧 Report Maintenance Issue</button>
+                <button class="btn btn-secondary" onclick="reportIssue()">🔧 Report Issue</button>
             </div>
 
             <!-- Upcoming Events -->
@@ -297,14 +302,19 @@
                     <div class="card-title">Upcoming Events</div>
                 </div>
                 <div class="announcement">
-                    <div class="announcement-date">July 11, 2025 - 6:00 PM</div>
-                    <div class="announcement-title">Quarterly Board Meeting</div>
-                    <p>All residents welcome</p>
+                    <div class="announcement-date">July 15, 2025 - 7:00 PM</div>
+                    <div class="announcement-title">Annual HOA Meeting</div>
+                    <p>Community Center - Election of board members and budget approval</p>
                 </div>
                 <div class="announcement">
                     <div class="announcement-date">July 4, 2025 - 2:00 PM</div>
-                    <div class="announcement-title">Independence Day BBQ</div>
-                    <p>Community Pool Area - Bring a side dish to share!</p>
+                    <div class="announcement-title">Independence Day Gathering</div>
+                    <p>Community Center - Informal neighborhood get-together</p>
+                </div>
+                <div class="announcement">
+                    <div class="announcement-date">August 15, 2025 - 10:00 AM</div>
+                    <div class="announcement-title">Community Yard Sale</div>
+                    <p>Contact the board to participate</p>
                 </div>
             </div>
 
@@ -316,10 +326,13 @@
                 </div>
                 <ul class="document-list">
                     <li>
-                        <a href="#" class="document-link">Pool & Amenity Rules</a>
+                        <a href="https://hcfl.gov/residents/property-owners-and-renters/trash-and-recycling" target="_blank" class="document-link">Trash & Recycling Schedule</a>
                     </li>
                     <li>
-                        <a href="#" class="document-link">Trash and Recycling Schedule</a>
+                        <a href="https://hcfl.gov/residents/property-owners-and-renters/trash-and-recycling" target="_blank" class="document-link">TECO Outage Map</a>
+                    </li>
+                    <li>
+                        <a href="https://www.accuweather.com/en/us/carrollwood/33618/weather-forecast/2257996" target="_blank" class="document-link">Local Weather Forecast</a>
                     </li>
                     <li>
                         <a href="#" class="document-link">Approved Vendors List</a>
@@ -338,7 +351,7 @@
                     <div class="card-title">Quick Links</div>
                 </div>
                 <button class="btn" onclick="payDues()">💳 Pay HOA Dues Online</button>
-                <button class="btn btn-secondary" onclick="submitRequest()">📝 Submit Architectural Review Request</button>
+                <button class="btn btn-secondary" onclick="submitRequest()">📝 Submit ARC Request</button>
                 <button class="btn" onclick="emergencyContacts()">🚨 Emergency Contacts</button>
                 <button class="btn btn-secondary" onclick="weatherAlert()">🌤️ Local Weather</button>
             </div>
@@ -358,23 +371,23 @@
             window.location.href = `mailto:board@edinboroughhoa.com?subject=${subject}&body=${body}`;
         }
 
-        // Report maintenance issue
+        // Report issue
         function reportIssue() {
-            const subject = encodeURIComponent('Maintenance Issue Report');
-            const body = encodeURIComponent('Dear Board Members,\n\nI would like to report the following maintenance issue:\n\nLocation: [Specify location]\nIssue: [Describe the problem]\nUrgency: [Low/Medium/High]\n\nThank you,\n[Your Name]\n[Your Address]\n[Your Phone Number]');
+            const subject = encodeURIComponent('Community Issue Report');
+            const body = encodeURIComponent('Dear Board Members,\n\nI would like to report the following issue:\n\nLocation: [Specify location]\nIssue: [Describe the problem]\nUrgency: [Low/Medium/High]\n\nThank you,\n[Your Name]\n[Your Address]\n[Your Phone Number]');
             window.location.href = `mailto:board@edinboroughhoa.com?subject=${subject}&body=${body}`;
         }
 
         // Submit ARC request
         function submitRequest() {
             const subject = encodeURIComponent('Architectural Review Committee Request');
-            const body = encodeURIComponent('Dear Review Committee,\n\nI would like to submit a request for approval of the following modification:\n\nProperty Address: [Your address]\nProject Description: [Describe your project]\nProposed Timeline: [When you plan to start/complete]\n\nI have attached/will provide the following documentation:\n- Detailed plans/drawings\n- Material specifications\n- Contractor information (if applicable)\n\nThank you for your consideration,\n[Your Name]\n[Your Contact Information]');
+            const body = encodeURIComponent('Dear ARC Committee,\n\nI would like to submit a request for approval of the following modification:\n\nProperty Address: [Your address]\nProject Description: [Describe your project]\nProposed Timeline: [When you plan to start/complete]\n\nI have attached/will provide the following documentation:\n- Detailed plans/drawings\n- Material specifications\n- Contractor information (if applicable)\n\nThank you for your consideration,\n[Your Name]\n[Your Contact Information]');
             window.location.href = `mailto:board@edinboroughhoa.com?subject=${subject}&body=${body}`;
         }
 
         // Pay dues (placeholder)
         function payDues() {
-            alert('Please contact the board for current payment methods.');
+            alert('HOA dues payment portal will be available soon. Please contact the board for current payment methods.');
         }
 
         // View community gallery
